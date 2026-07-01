@@ -1,52 +1,52 @@
-import { Link } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 
 import { Logo } from "@/components/Logo";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { AuthIllustration } from "@/components/auth/AuthIllustration";
+import { useOnlineStatus } from "@/hooks/use-online-status";
+import { useTranslation } from "react-i18next";
+import { WifiOff } from "lucide-react";
 
-export function AuthShell({
-  title,
-  subtitle,
-  children,
-  footer,
-}: {
-  title: string;
-  subtitle: string;
-  children: ReactNode;
-  footer: ReactNode;
-}) {
+/**
+ * Two-column premium auth layout.
+ * Left  — form area (logo header + form card).
+ * Right — brand illustration (hidden on <lg).
+ */
+export function AuthShell({ children }: { children: ReactNode }) {
+  const { t } = useTranslation();
+  const online = useOnlineStatus();
+
   return (
-    <div className="grid min-h-screen lg:grid-cols-2">
-      {/* Left — form */}
-      <div className="flex flex-col bg-background">
-        <header className="flex items-center justify-between px-6 py-5">
+    <div className="grid min-h-screen lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)]">
+      {/* Form side */}
+      <div className="relative flex min-h-screen flex-col bg-background">
+        <header className="flex items-center justify-between px-6 py-5 sm:px-10">
           <Logo />
           <LanguageSwitcher />
         </header>
-        <main className="flex flex-1 items-center justify-center px-6 py-10">
-          <div className="w-full max-w-sm">
-            <h1 className="text-2xl font-semibold tracking-tight text-foreground">{title}</h1>
-            <p className="mt-1.5 text-sm text-muted-foreground">{subtitle}</p>
-            <div className="mt-7">{children}</div>
-            <div className="mt-6 text-sm text-muted-foreground">{footer}</div>
+
+        {!online && (
+          <div
+            role="status"
+            className="mx-6 flex items-center gap-2 rounded-lg border border-warning/30 bg-warning/10 px-3 py-2 text-xs font-medium text-warning-foreground sm:mx-10"
+          >
+            <WifiOff className="h-3.5 w-3.5" />
+            <span>{t("auth.offline")}</span>
           </div>
+        )}
+
+        <main className="flex flex-1 items-center justify-center px-6 py-10 sm:px-10">
+          <div className="w-full max-w-md">{children}</div>
         </main>
+
+        <footer className="px-6 py-6 text-xs text-muted-foreground sm:px-10">
+          © {new Date().getFullYear()} Kyveron · Menu
+        </footer>
       </div>
-      {/* Right — brand */}
-      <div className="relative hidden overflow-hidden bg-gradient-brand lg:block">
-        <div className="absolute inset-0 bg-[radial-gradient(70%_50%_at_20%_20%,rgba(255,255,255,0.18),transparent_60%)]" />
-        <div className="relative flex h-full flex-col justify-between p-12 text-primary-foreground">
-          <div />
-          <div>
-            <p className="text-2xl font-semibold leading-snug">
-              “Em menos de um minuto tinha o meu cardápio pronto para os clientes.”
-            </p>
-            <p className="mt-4 text-sm opacity-80">— Restaurante Casa do Mar, Cascais</p>
-          </div>
-          <div className="flex items-center gap-2 text-xs opacity-70">
-            <Link to="/" className="hover:opacity-100">Kyveron · Menu</Link>
-          </div>
-        </div>
+
+      {/* Illustration side */}
+      <div className="relative hidden lg:block">
+        <AuthIllustration />
       </div>
     </div>
   );
