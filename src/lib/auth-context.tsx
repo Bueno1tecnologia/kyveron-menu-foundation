@@ -1,10 +1,10 @@
 /**
  * Auth context scaffold.
  *
- * This is the interface the rest of the app uses for authentication.
- * The actual implementation (Lovable Cloud / Supabase / custom) will be
- * wired up in a later step. For now it exposes a typed contract and a
- * no-op provider so the UI, route guards and sessions can be built on top.
+ * Typed contract for the rest of the app. The concrete implementation
+ * (Lovable Cloud / Supabase / custom) will be wired in a later step.
+ * Handlers currently simulate a network round-trip so UI states
+ * (loading / error / success) can be developed and validated end-to-end.
  */
 import { createContext, useContext, useMemo, useState, type ReactNode } from "react";
 
@@ -18,12 +18,17 @@ export interface AuthState {
   user: AuthUser | null;
   isAuthenticated: boolean;
   isLoading: boolean;
-  signIn: (email: string, password: string) => Promise<void>;
+  signIn: (email: string, password: string, remember?: boolean) => Promise<void>;
   signUp: (name: string, email: string, password: string) => Promise<void>;
   signOut: () => Promise<void>;
+  requestPasswordReset: (email: string) => Promise<void>;
+  updatePassword: (password: string) => Promise<void>;
 }
 
 const AuthContext = createContext<AuthState | undefined>(undefined);
+
+// Tiny helper to simulate async work without lying about success.
+const wait = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
 
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<AuthUser | null>(null);
@@ -34,15 +39,23 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       user,
       isAuthenticated: user !== null,
       isLoading,
-      // Placeholder implementations — to be replaced by the real backend.
       signIn: async (email) => {
+        await wait(600);
         setUser({ id: "preview-user", name: email.split("@")[0] ?? "Utilizador", email });
       },
       signUp: async (name, email) => {
+        await wait(700);
         setUser({ id: "preview-user", name, email });
       },
       signOut: async () => {
+        await wait(200);
         setUser(null);
+      },
+      requestPasswordReset: async () => {
+        await wait(600);
+      },
+      updatePassword: async () => {
+        await wait(600);
       },
     }),
     [user, isLoading],
