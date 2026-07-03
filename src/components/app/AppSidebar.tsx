@@ -1,5 +1,13 @@
 import { Link, useRouterState } from "@tanstack/react-router";
-import { BarChart3, CreditCard, LayoutDashboard, Settings, UtensilsCrossed } from "lucide-react";
+import {
+  Building2,
+  CreditCard,
+  LayoutDashboard,
+  LifeBuoy,
+  Settings,
+  UserCircle,
+  UtensilsCrossed,
+} from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 import {
@@ -22,9 +30,11 @@ export function AppSidebar() {
   const items = [
     { title: t("nav.dashboard"), url: "/app", icon: LayoutDashboard },
     { title: t("nav.menus"), url: "/app/menus", icon: UtensilsCrossed },
-    { title: t("nav.analytics"), url: "/app/analytics", icon: BarChart3 },
-    { title: t("nav.billing"), url: "/app/billing", icon: CreditCard },
+    { title: t("nav.establishments"), url: "/app/establishments", icon: Building2 },
+    { title: t("nav.subscription"), url: "/app/subscription", icon: CreditCard },
+    { title: t("nav.support"), url: "/app/support", icon: LifeBuoy },
     { title: t("nav.settings"), url: "/app/settings", icon: Settings },
+    { title: t("nav.profile"), url: "/app/profile", icon: UserCircle },
   ];
 
   return (

@@ -18,8 +18,12 @@ import { Route as FeaturesRouteImport } from './routes/features'
 import { Route as AppRouteImport } from './routes/app'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AppIndexRouteImport } from './routes/app.index'
+import { Route as AppSupportRouteImport } from './routes/app.support'
+import { Route as AppSubscriptionRouteImport } from './routes/app.subscription'
 import { Route as AppSettingsRouteImport } from './routes/app.settings'
+import { Route as AppProfileRouteImport } from './routes/app.profile'
 import { Route as AppMenusRouteImport } from './routes/app.menus'
+import { Route as AppEstablishmentsRouteImport } from './routes/app.establishments'
 import { Route as AppBillingRouteImport } from './routes/app.billing'
 import { Route as AppAnalyticsRouteImport } from './routes/app.analytics'
 
@@ -68,14 +72,34 @@ const AppIndexRoute = AppIndexRouteImport.update({
   path: '/',
   getParentRoute: () => AppRoute,
 } as any)
+const AppSupportRoute = AppSupportRouteImport.update({
+  id: '/support',
+  path: '/support',
+  getParentRoute: () => AppRoute,
+} as any)
+const AppSubscriptionRoute = AppSubscriptionRouteImport.update({
+  id: '/subscription',
+  path: '/subscription',
+  getParentRoute: () => AppRoute,
+} as any)
 const AppSettingsRoute = AppSettingsRouteImport.update({
   id: '/settings',
   path: '/settings',
   getParentRoute: () => AppRoute,
 } as any)
+const AppProfileRoute = AppProfileRouteImport.update({
+  id: '/profile',
+  path: '/profile',
+  getParentRoute: () => AppRoute,
+} as any)
 const AppMenusRoute = AppMenusRouteImport.update({
   id: '/menus',
   path: '/menus',
+  getParentRoute: () => AppRoute,
+} as any)
+const AppEstablishmentsRoute = AppEstablishmentsRouteImport.update({
+  id: '/establishments',
+  path: '/establishments',
   getParentRoute: () => AppRoute,
 } as any)
 const AppBillingRoute = AppBillingRouteImport.update({
@@ -100,8 +124,12 @@ export interface FileRoutesByFullPath {
   '/signup': typeof SignupRoute
   '/app/analytics': typeof AppAnalyticsRoute
   '/app/billing': typeof AppBillingRoute
+  '/app/establishments': typeof AppEstablishmentsRoute
   '/app/menus': typeof AppMenusRoute
+  '/app/profile': typeof AppProfileRoute
   '/app/settings': typeof AppSettingsRoute
+  '/app/subscription': typeof AppSubscriptionRoute
+  '/app/support': typeof AppSupportRoute
   '/app/': typeof AppIndexRoute
 }
 export interface FileRoutesByTo {
@@ -114,8 +142,12 @@ export interface FileRoutesByTo {
   '/signup': typeof SignupRoute
   '/app/analytics': typeof AppAnalyticsRoute
   '/app/billing': typeof AppBillingRoute
+  '/app/establishments': typeof AppEstablishmentsRoute
   '/app/menus': typeof AppMenusRoute
+  '/app/profile': typeof AppProfileRoute
   '/app/settings': typeof AppSettingsRoute
+  '/app/subscription': typeof AppSubscriptionRoute
+  '/app/support': typeof AppSupportRoute
   '/app': typeof AppIndexRoute
 }
 export interface FileRoutesById {
@@ -130,8 +162,12 @@ export interface FileRoutesById {
   '/signup': typeof SignupRoute
   '/app/analytics': typeof AppAnalyticsRoute
   '/app/billing': typeof AppBillingRoute
+  '/app/establishments': typeof AppEstablishmentsRoute
   '/app/menus': typeof AppMenusRoute
+  '/app/profile': typeof AppProfileRoute
   '/app/settings': typeof AppSettingsRoute
+  '/app/subscription': typeof AppSubscriptionRoute
+  '/app/support': typeof AppSupportRoute
   '/app/': typeof AppIndexRoute
 }
 export interface FileRouteTypes {
@@ -147,8 +183,12 @@ export interface FileRouteTypes {
     | '/signup'
     | '/app/analytics'
     | '/app/billing'
+    | '/app/establishments'
     | '/app/menus'
+    | '/app/profile'
     | '/app/settings'
+    | '/app/subscription'
+    | '/app/support'
     | '/app/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -161,8 +201,12 @@ export interface FileRouteTypes {
     | '/signup'
     | '/app/analytics'
     | '/app/billing'
+    | '/app/establishments'
     | '/app/menus'
+    | '/app/profile'
     | '/app/settings'
+    | '/app/subscription'
+    | '/app/support'
     | '/app'
   id:
     | '__root__'
@@ -176,8 +220,12 @@ export interface FileRouteTypes {
     | '/signup'
     | '/app/analytics'
     | '/app/billing'
+    | '/app/establishments'
     | '/app/menus'
+    | '/app/profile'
     | '/app/settings'
+    | '/app/subscription'
+    | '/app/support'
     | '/app/'
   fileRoutesById: FileRoutesById
 }
@@ -257,6 +305,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AppIndexRouteImport
       parentRoute: typeof AppRoute
     }
+    '/app/support': {
+      id: '/app/support'
+      path: '/support'
+      fullPath: '/app/support'
+      preLoaderRoute: typeof AppSupportRouteImport
+      parentRoute: typeof AppRoute
+    }
+    '/app/subscription': {
+      id: '/app/subscription'
+      path: '/subscription'
+      fullPath: '/app/subscription'
+      preLoaderRoute: typeof AppSubscriptionRouteImport
+      parentRoute: typeof AppRoute
+    }
     '/app/settings': {
       id: '/app/settings'
       path: '/settings'
@@ -264,11 +326,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AppSettingsRouteImport
       parentRoute: typeof AppRoute
     }
+    '/app/profile': {
+      id: '/app/profile'
+      path: '/profile'
+      fullPath: '/app/profile'
+      preLoaderRoute: typeof AppProfileRouteImport
+      parentRoute: typeof AppRoute
+    }
     '/app/menus': {
       id: '/app/menus'
       path: '/menus'
       fullPath: '/app/menus'
       preLoaderRoute: typeof AppMenusRouteImport
+      parentRoute: typeof AppRoute
+    }
+    '/app/establishments': {
+      id: '/app/establishments'
+      path: '/establishments'
+      fullPath: '/app/establishments'
+      preLoaderRoute: typeof AppEstablishmentsRouteImport
       parentRoute: typeof AppRoute
     }
     '/app/billing': {
@@ -291,16 +367,24 @@ declare module '@tanstack/react-router' {
 interface AppRouteChildren {
   AppAnalyticsRoute: typeof AppAnalyticsRoute
   AppBillingRoute: typeof AppBillingRoute
+  AppEstablishmentsRoute: typeof AppEstablishmentsRoute
   AppMenusRoute: typeof AppMenusRoute
+  AppProfileRoute: typeof AppProfileRoute
   AppSettingsRoute: typeof AppSettingsRoute
+  AppSubscriptionRoute: typeof AppSubscriptionRoute
+  AppSupportRoute: typeof AppSupportRoute
   AppIndexRoute: typeof AppIndexRoute
 }
 
 const AppRouteChildren: AppRouteChildren = {
   AppAnalyticsRoute: AppAnalyticsRoute,
   AppBillingRoute: AppBillingRoute,
+  AppEstablishmentsRoute: AppEstablishmentsRoute,
   AppMenusRoute: AppMenusRoute,
+  AppProfileRoute: AppProfileRoute,
   AppSettingsRoute: AppSettingsRoute,
+  AppSubscriptionRoute: AppSubscriptionRoute,
+  AppSupportRoute: AppSupportRoute,
   AppIndexRoute: AppIndexRoute,
 }
 

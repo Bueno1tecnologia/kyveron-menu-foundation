@@ -19,17 +19,30 @@
     "back": "Volver",
     "continue": "Continuar",
     "submit": "Enviar",
-    "retry": "Reintentar"
+    "retry": "Reintentar",
+    "viewAll": "Ver todo",
+    "new": "Nuevo",
+    "edit": "Editar",
+    "view": "Ver",
+    "duplicate": "Duplicar",
+    "qrCode": "Código QR",
+    "notifications": "Notificaciones",
+    "profile": "Perfil",
+    "myPlan": "Plan actual"
   },
   "nav": {
     "features": "Funciones",
     "pricing": "Precios",
     "about": "Acerca",
     "dashboard": "Panel",
-    "menus": "Cartas",
+    "menus": "Mis Cartas",
+    "establishments": "Establecimientos",
+    "subscription": "Suscripción",
+    "support": "Soporte",
     "analytics": "Analíticas",
-    "settings": "Ajustes",
-    "billing": "Facturación"
+    "settings": "Configuración",
+    "billing": "Facturación",
+    "profile": "Mi Perfil"
   },
   "landing": {
     "badge": "Nuevo · Generación automática con IA",
@@ -127,15 +140,45 @@
   },
   "dashboard": {
     "welcome": "Bienvenido de nuevo",
-    "subtitle": "Aquí tienes un resumen de tu cuenta.",
-    "statMenus": "Cartas activas",
-    "statViews": "Visualizaciones (30 días)",
-    "statItems": "Ítems publicados",
-    "statRevenue": "Plan actual",
-    "createMenu": "Crear nueva carta",
-    "emptyTitle": "Aún no has creado ninguna carta",
-    "emptyDesc": "Describe tu negocio y deja que nuestra IA cree tu primera carta.",
-    "recentActivity": "Actividad reciente",
-    "noActivity": "Sin actividad reciente."
+    "subtitle": "Vamos a crear experiencias increíbles para tus clientes.",
+    "createWithAI": "Crear Carta con IA",
+    "createWithAIHint": "Describe tu negocio y la IA genera una carta completa en segundos.",
+    "stats": {
+      "menus": "Total de Cartas",
+      "menusDesc": "Publicadas y borradores",
+      "views": "Visualizaciones",
+      "viewsDesc": "Últimos 30 días",
+      "orders": "Pedidos Recibidos",
+      "ordersDesc": "Últimos 30 días",
+      "establishments": "Establecimientos",
+      "establishmentsDesc": "Locales activos",
+      "plan": "Plan Actual",
+      "planDesc": "Tu suscripción"
+    },
+    "recentActivity": "Actividad Reciente",
+    "recentActivityDesc": "Últimas acciones de tu cuenta",
+    "noActivity": "Aún no hay actividad para mostrar.",
+    "recentMenus": "Cartas Recientes",
+    "recentMenusDesc": "Tus últimas cartas creadas",
+    "status": {
+      "published": "Publicada",
+      "draft": "Borrador"
+    },
+    "quickActions": "Acciones Rápidas",
+    "quickActionsDesc": "Accede rápidamente a las tareas más comunes",
+    "actions": {
+      "createMenu": "Crear Carta",
+      "newEstablishment": "Nuevo Establecimiento",
+      "generateQR": "Generar Código QR",
+      "manageSubscription": "Gestionar Suscripción",
+      "editProfile": "Editar Perfil"
+    },
+    "empty": {
+      "title": "Aún no has creado ninguna carta.",
+      "desc": "Empieza ahora y crea tu primera carta digital con Inteligencia Artificial en segundos.",
+      "cta": "Crear Primera Carta"
+    },
+    "lastEdited": "Editada {{when}}",
+    "noNotifications": "Sin notificaciones nuevas."
   }
 }

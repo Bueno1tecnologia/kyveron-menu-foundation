@@ -19,17 +19,30 @@
     "back": "Back",
     "continue": "Continue",
     "submit": "Submit",
-    "retry": "Try again"
+    "retry": "Try again",
+    "viewAll": "View all",
+    "new": "New",
+    "edit": "Edit",
+    "view": "View",
+    "duplicate": "Duplicate",
+    "qrCode": "QR Code",
+    "notifications": "Notifications",
+    "profile": "Profile",
+    "myPlan": "Current plan"
   },
   "nav": {
     "features": "Features",
     "pricing": "Pricing",
     "about": "About",
     "dashboard": "Dashboard",
-    "menus": "Menus",
+    "menus": "My Menus",
+    "establishments": "Establishments",
+    "subscription": "Subscription",
+    "support": "Support",
     "analytics": "Analytics",
     "settings": "Settings",
-    "billing": "Billing"
+    "billing": "Billing",
+    "profile": "My Profile"
   },
   "landing": {
     "badge": "New · Automatic AI generation",
@@ -127,15 +140,45 @@
   },
   "dashboard": {
     "welcome": "Welcome back",
-    "subtitle": "Here's a quick overview of your account.",
-    "statMenus": "Active menus",
-    "statViews": "Views (30 days)",
-    "statItems": "Published items",
-    "statRevenue": "Current plan",
-    "createMenu": "Create new menu",
-    "emptyTitle": "You haven't created any menus yet",
-    "emptyDesc": "Describe your business and let our AI build your first menu.",
-    "recentActivity": "Recent activity",
-    "noActivity": "No recent activity."
+    "subtitle": "Let's build amazing experiences for your customers.",
+    "createWithAI": "Create Menu with AI",
+    "createWithAIHint": "Describe your business and AI generates a full menu in seconds.",
+    "stats": {
+      "menus": "Total Menus",
+      "menusDesc": "Published and drafts",
+      "views": "Views",
+      "viewsDesc": "Last 30 days",
+      "orders": "Orders Received",
+      "ordersDesc": "Last 30 days",
+      "establishments": "Establishments",
+      "establishmentsDesc": "Active locations",
+      "plan": "Current Plan",
+      "planDesc": "Your subscription"
+    },
+    "recentActivity": "Recent Activity",
+    "recentActivityDesc": "Latest actions on your account",
+    "noActivity": "No activity to show yet.",
+    "recentMenus": "Recent Menus",
+    "recentMenusDesc": "Your latest created menus",
+    "status": {
+      "published": "Published",
+      "draft": "Draft"
+    },
+    "quickActions": "Quick Actions",
+    "quickActionsDesc": "Access the most common tasks quickly",
+    "actions": {
+      "createMenu": "Create Menu",
+      "newEstablishment": "New Establishment",
+      "generateQR": "Generate QR Code",
+      "manageSubscription": "Manage Subscription",
+      "editProfile": "Edit Profile"
+    },
+    "empty": {
+      "title": "You haven't created any menus yet.",
+      "desc": "Start now and build your first digital menu with Artificial Intelligence in seconds.",
+      "cta": "Create First Menu"
+    },
+    "lastEdited": "Edited {{when}}",
+    "noNotifications": "No new notifications."
   }
 }
