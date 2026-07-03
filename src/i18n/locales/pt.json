@@ -19,17 +19,30 @@
     "back": "Voltar",
     "continue": "Continuar",
     "submit": "Enviar",
-    "retry": "Tentar novamente"
+    "retry": "Tentar novamente",
+    "viewAll": "Ver tudo",
+    "new": "Novo",
+    "edit": "Editar",
+    "view": "Ver",
+    "duplicate": "Duplicar",
+    "qrCode": "QR Code",
+    "notifications": "Notificações",
+    "profile": "Perfil",
+    "myPlan": "Plano atual"
   },
   "nav": {
     "features": "Funcionalidades",
     "pricing": "Preços",
     "about": "Sobre",
-    "dashboard": "Painel",
-    "menus": "Cardápios",
+    "dashboard": "Dashboard",
+    "menus": "Meus Cardápios",
+    "establishments": "Estabelecimentos",
+    "subscription": "Assinatura",
+    "support": "Suporte",
     "analytics": "Análises",
-    "settings": "Definições",
-    "billing": "Faturação"
+    "settings": "Configurações",
+    "billing": "Faturação",
+    "profile": "Meu Perfil"
   },
   "landing": {
     "badge": "Novo · Geração automática com IA",
@@ -126,16 +139,46 @@
     "termsRequired": "Deve aceitar os Termos para continuar"
   },
   "dashboard": {
-    "welcome": "Olá novamente",
-    "subtitle": "Aqui está um resumo da sua conta.",
-    "statMenus": "Cardápios ativos",
-    "statViews": "Visualizações (30 dias)",
-    "statItems": "Itens publicados",
-    "statRevenue": "Plano atual",
-    "createMenu": "Criar novo cardápio",
-    "emptyTitle": "Ainda não criou nenhum cardápio",
-    "emptyDesc": "Descreva o seu negócio e deixe a nossa IA criar o seu primeiro cardápio.",
-    "recentActivity": "Atividade recente",
-    "noActivity": "Sem atividade recente."
+    "welcome": "Bem-vindo de volta",
+    "subtitle": "Vamos criar experiências incríveis para os seus clientes.",
+    "createWithAI": "Criar Cardápio com IA",
+    "createWithAIHint": "Descreva o seu negócio e a IA gera um cardápio completo em segundos.",
+    "stats": {
+      "menus": "Total de Cardápios",
+      "menusDesc": "Cardápios publicados e rascunhos",
+      "views": "Visualizações",
+      "viewsDesc": "Últimos 30 dias",
+      "orders": "Pedidos Recebidos",
+      "ordersDesc": "Últimos 30 dias",
+      "establishments": "Estabelecimentos",
+      "establishmentsDesc": "Locais ativos",
+      "plan": "Plano Atual",
+      "planDesc": "A sua subscrição"
+    },
+    "recentActivity": "Atividade Recente",
+    "recentActivityDesc": "Últimas ações na sua conta",
+    "noActivity": "Ainda não há atividade para mostrar.",
+    "recentMenus": "Cardápios Recentes",
+    "recentMenusDesc": "Os seus últimos cardápios criados",
+    "status": {
+      "published": "Publicado",
+      "draft": "Rascunho"
+    },
+    "quickActions": "Ações Rápidas",
+    "quickActionsDesc": "Aceda rapidamente às tarefas mais comuns",
+    "actions": {
+      "createMenu": "Criar Cardápio",
+      "newEstablishment": "Novo Estabelecimento",
+      "generateQR": "Gerar QR Code",
+      "manageSubscription": "Gerir Assinatura",
+      "editProfile": "Editar Perfil"
+    },
+    "empty": {
+      "title": "Ainda não criou nenhum cardápio.",
+      "desc": "Comece agora e crie o seu primeiro cardápio digital com Inteligência Artificial em poucos segundos.",
+      "cta": "Criar Primeiro Cardápio"
+    },
+    "lastEdited": "Editado {{when}}",
+    "noNotifications": "Sem notificações novas."
   }
 }
