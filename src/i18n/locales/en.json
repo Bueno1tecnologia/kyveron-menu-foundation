@@ -180,5 +180,88 @@
     },
     "lastEdited": "Edited {{when}}",
     "noNotifications": "No new notifications."
+  },
+  "establishments": {
+    "subtitle": "Manage all your locations in one place.",
+    "createNew": "Create New Establishment",
+    "searchPlaceholder": "Search by name or city...",
+    "noResults": "No establishments match your filters.",
+    "status": {
+      "active": "Active",
+      "draft": "Draft"
+    },
+    "filters": {
+      "all": "All",
+      "recent": "Most recent",
+      "oldest": "Oldest",
+      "category": "Category",
+      "allCategories": "All categories",
+      "city": "City",
+      "allCities": "All cities"
+    },
+    "categories": {
+      "restaurant": "Restaurant",
+      "cafe": "Café",
+      "pastry": "Pastry Shop",
+      "pizzeria": "Pizzeria",
+      "burger": "Burger Joint",
+      "bakery": "Bakery",
+      "gelato": "Gelato Shop",
+      "sushi": "Sushi",
+      "foodtruck": "Food Truck",
+      "bar": "Bar",
+      "other": "Other"
+    },
+    "actions": {
+      "open": "Open",
+      "delete": "Delete"
+    },
+    "card": {
+      "menusCount_one": "{{count}} menu",
+      "menusCount_other": "{{count}} menus",
+      "updated": "Updated {{when}}"
+    },
+    "empty": {
+      "title": "You haven't created any establishments yet.",
+      "desc": "Add your first location to start building digital menus.",
+      "cta": "Create First Establishment"
+    },
+    "form": {
+      "createTitle": "New Establishment",
+      "editTitle": "Edit Establishment",
+      "subtitle": "Fill in the details below. You can edit everything later.",
+      "tabs": {
+        "info": "Information",
+        "contact": "Contact",
+        "brand": "Branding",
+        "social": "Social"
+      },
+      "name": "Establishment name",
+      "namePlaceholder": "e.g. Central Café",
+      "category": "Category",
+      "status": "Status",
+      "description": "Description",
+      "descriptionPlaceholder": "Briefly describe your business...",
+      "openingHours": "Opening hours",
+      "openingHoursPlaceholder": "Mon-Fri 09:00-22:00",
+      "phone": "Phone",
+      "whatsapp": "WhatsApp",
+      "website": "Website",
+      "street": "Street",
+      "city": "City",
+      "postalCode": "Postal Code",
+      "primaryColor": "Primary color",
+      "secondaryColor": "Secondary color",
+      "theme": "Theme",
+      "themeLight": "Light",
+      "themeDark": "Dark",
+      "logoUrl": "Logo URL",
+      "coverUrl": "Cover image URL",
+      "create": "Create establishment"
+    },
+    "delete": {
+      "title": "Delete establishment?",
+      "description": "This action cannot be undone. \"{{name}}\" and all its menus will be removed."
+    }
   }
 }

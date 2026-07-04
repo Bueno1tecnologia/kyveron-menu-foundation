@@ -180,5 +180,88 @@
     },
     "lastEdited": "Editado {{when}}",
     "noNotifications": "Sem notificações novas."
+  },
+  "establishments": {
+    "subtitle": "Faça a gestão de todos os seus estabelecimentos num único lugar.",
+    "createNew": "Criar Novo Estabelecimento",
+    "searchPlaceholder": "Procurar por nome ou cidade...",
+    "noResults": "Nenhum estabelecimento corresponde aos filtros aplicados.",
+    "status": {
+      "active": "Ativo",
+      "draft": "Rascunho"
+    },
+    "filters": {
+      "all": "Todos",
+      "recent": "Mais recentes",
+      "oldest": "Mais antigos",
+      "category": "Categoria",
+      "allCategories": "Todas as categorias",
+      "city": "Cidade",
+      "allCities": "Todas as cidades"
+    },
+    "categories": {
+      "restaurant": "Restaurante",
+      "cafe": "Café",
+      "pastry": "Pastelaria",
+      "pizzeria": "Pizzaria",
+      "burger": "Hamburgueria",
+      "bakery": "Padaria",
+      "gelato": "Gelataria",
+      "sushi": "Sushi",
+      "foodtruck": "Food Truck",
+      "bar": "Bar",
+      "other": "Outro"
+    },
+    "actions": {
+      "open": "Abrir",
+      "delete": "Eliminar"
+    },
+    "card": {
+      "menusCount_one": "{{count}} cardápio",
+      "menusCount_other": "{{count}} cardápios",
+      "updated": "Atualizado {{when}}"
+    },
+    "empty": {
+      "title": "Ainda não criou nenhum estabelecimento.",
+      "desc": "Adicione o seu primeiro estabelecimento para começar a criar cardápios digitais.",
+      "cta": "Criar Primeiro Estabelecimento"
+    },
+    "form": {
+      "createTitle": "Novo Estabelecimento",
+      "editTitle": "Editar Estabelecimento",
+      "subtitle": "Preencha as informações abaixo. Pode editar tudo mais tarde.",
+      "tabs": {
+        "info": "Informações",
+        "contact": "Contacto",
+        "brand": "Identidade",
+        "social": "Redes sociais"
+      },
+      "name": "Nome do estabelecimento",
+      "namePlaceholder": "Ex: Café Central",
+      "category": "Categoria",
+      "status": "Estado",
+      "description": "Descrição",
+      "descriptionPlaceholder": "Descreva brevemente o seu negócio...",
+      "openingHours": "Horário de funcionamento",
+      "openingHoursPlaceholder": "Seg-Sex 09:00-22:00",
+      "phone": "Telefone",
+      "whatsapp": "WhatsApp",
+      "website": "Website",
+      "street": "Morada",
+      "city": "Cidade",
+      "postalCode": "Código Postal",
+      "primaryColor": "Cor principal",
+      "secondaryColor": "Cor secundária",
+      "theme": "Tema",
+      "themeLight": "Claro",
+      "themeDark": "Escuro",
+      "logoUrl": "URL do logótipo",
+      "coverUrl": "URL da imagem de capa",
+      "create": "Criar estabelecimento"
+    },
+    "delete": {
+      "title": "Eliminar estabelecimento?",
+      "description": "Esta ação não pode ser desfeita. \"{{name}}\" e todos os seus cardápios serão removidos."
+    }
   }
 }
