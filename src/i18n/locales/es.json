@@ -180,5 +180,88 @@
     },
     "lastEdited": "Editada {{when}}",
     "noNotifications": "Sin notificaciones nuevas."
+  },
+  "establishments": {
+    "subtitle": "Gestione todos sus establecimientos en un solo lugar.",
+    "createNew": "Crear Nuevo Establecimiento",
+    "searchPlaceholder": "Buscar por nombre o ciudad...",
+    "noResults": "Ningún establecimiento coincide con los filtros.",
+    "status": {
+      "active": "Activo",
+      "draft": "Borrador"
+    },
+    "filters": {
+      "all": "Todos",
+      "recent": "Más recientes",
+      "oldest": "Más antiguos",
+      "category": "Categoría",
+      "allCategories": "Todas las categorías",
+      "city": "Ciudad",
+      "allCities": "Todas las ciudades"
+    },
+    "categories": {
+      "restaurant": "Restaurante",
+      "cafe": "Cafetería",
+      "pastry": "Pastelería",
+      "pizzeria": "Pizzería",
+      "burger": "Hamburguesería",
+      "bakery": "Panadería",
+      "gelato": "Heladería",
+      "sushi": "Sushi",
+      "foodtruck": "Food Truck",
+      "bar": "Bar",
+      "other": "Otro"
+    },
+    "actions": {
+      "open": "Abrir",
+      "delete": "Eliminar"
+    },
+    "card": {
+      "menusCount_one": "{{count}} menú",
+      "menusCount_other": "{{count}} menús",
+      "updated": "Actualizado {{when}}"
+    },
+    "empty": {
+      "title": "Aún no ha creado ningún establecimiento.",
+      "desc": "Añada su primer establecimiento para empezar a crear menús digitales.",
+      "cta": "Crear Primer Establecimiento"
+    },
+    "form": {
+      "createTitle": "Nuevo Establecimiento",
+      "editTitle": "Editar Establecimiento",
+      "subtitle": "Complete la información. Puede editar todo más tarde.",
+      "tabs": {
+        "info": "Información",
+        "contact": "Contacto",
+        "brand": "Identidad",
+        "social": "Redes sociales"
+      },
+      "name": "Nombre del establecimiento",
+      "namePlaceholder": "Ej: Café Central",
+      "category": "Categoría",
+      "status": "Estado",
+      "description": "Descripción",
+      "descriptionPlaceholder": "Describa brevemente su negocio...",
+      "openingHours": "Horario de apertura",
+      "openingHoursPlaceholder": "Lun-Vie 09:00-22:00",
+      "phone": "Teléfono",
+      "whatsapp": "WhatsApp",
+      "website": "Sitio web",
+      "street": "Dirección",
+      "city": "Ciudad",
+      "postalCode": "Código Postal",
+      "primaryColor": "Color principal",
+      "secondaryColor": "Color secundario",
+      "theme": "Tema",
+      "themeLight": "Claro",
+      "themeDark": "Oscuro",
+      "logoUrl": "URL del logotipo",
+      "coverUrl": "URL de la imagen de portada",
+      "create": "Crear establecimiento"
+    },
+    "delete": {
+      "title": "¿Eliminar establecimiento?",
+      "description": "Esta acción no se puede deshacer. \"{{name}}\" y todos sus menús serán eliminados."
+    }
   }
 }
