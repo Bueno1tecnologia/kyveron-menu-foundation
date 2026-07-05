@@ -25,10 +25,12 @@ if (!i18n.isInitialized) {
         es: { translation: es },
       },
       fallbackLng: "pt",
+      lng: undefined,
       supportedLngs: ["pt", "en", "es"],
+      load: "languageOnly",
       interpolation: { escapeValue: false },
       detection: {
-        order: ["localStorage", "navigator"],
+        order: ["localStorage"],
         caches: ["localStorage"],
         lookupLocalStorage: "kyveron.lang",
       },
