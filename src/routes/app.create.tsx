@@ -75,10 +75,27 @@ function CreateMenuPage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const search = useSearch({ from: "/app/create" });
   const [prompt, setPrompt] = useState("");
   const [isGenerating, setIsGenerating] = useState(false);
   const [currentStep, setCurrentStep] = useState(0);
   const [showShortWarning, setShowShortWarning] = useState(false);
+
+  // Pre-fill prompt when arriving from a template selection
+  useEffect(() => {
+    const key = search.template as ExampleKey | undefined;
+    if (key && EXAMPLES.some((e) => e.key === key) && !prompt) {
+      const text = t(`create.examples.${key}.prompt`);
+      setPrompt(text);
+      requestAnimationFrame(() => {
+        const el = textareaRef.current;
+        if (!el) return;
+        el.focus();
+        el.setSelectionRange(el.value.length, el.value.length);
+      });
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [search.template]);
 
   const trimmed = prompt.trim();
   const isTooShort = trimmed.length > 0 && trimmed.length < MIN_PROMPT_LENGTH;
