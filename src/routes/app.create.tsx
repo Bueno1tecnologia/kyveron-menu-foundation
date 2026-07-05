@@ -28,6 +28,7 @@ import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/compone
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/app/create")({
+  validateSearch: z.object({ template: z.string().optional() }).parse,
   component: CreateMenuPage,
 });
 
