@@ -3,6 +3,7 @@ import {
   Building2,
   CreditCard,
   LayoutDashboard,
+  LayoutTemplate,
   LifeBuoy,
   Settings,
   Sparkles,
