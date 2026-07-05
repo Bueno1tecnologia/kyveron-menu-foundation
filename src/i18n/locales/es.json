@@ -42,7 +42,8 @@
     "analytics": "Analíticas",
     "settings": "Configuración",
     "billing": "Facturación",
-    "profile": "Mi Perfil"
+    "profile": "Mi Perfil",
+    "createWithAI": "Crear con IA"
   },
   "landing": {
     "badge": "Nuevo · Generación automática con IA",
@@ -180,6 +181,43 @@
     },
     "lastEdited": "Editada {{when}}",
     "noNotifications": "Sin notificaciones nuevas."
+  },
+  "create": {
+    "title": "Crea una carta profesional con Inteligencia Artificial.",
+    "subtitle": "Describe tu negocio con el mayor detalle posible y KYVERON crea automáticamente una carta moderna y totalmente editable.",
+    "editorLabel": "Describe tu negocio",
+    "placeholder": "Ejemplo:\n\nTengo un restaurante italiano llamado Bella Napoli en Lisboa.\nQuiero una carta elegante en colores negro y dorado.\nVendemos pizzas artesanales, pastas, postres italianos y bebidas.\nEl estilo debe transmitir sofisticación.",
+    "cta": "✨ Crear Carta",
+    "hint": "Cuantos más detalles, mejor será la carta creada por la IA.",
+    "tooShort": "Escribe al menos {{min}} caracteres para que la IA genere una carta de calidad.",
+    "examplesTitle": "¿Necesitas inspiración?",
+    "examplesSubtitle": "Haz clic en un ejemplo para rellenar el editor.",
+    "examples": {
+      "burger": { "label": "Hamburguesería", "prompt": "Tengo una hamburguesería artesanal llamada Smoke House en Oporto. Servimos hamburguesas gourmet, patatas rústicas, cervezas artesanales y batidos. Quiero una carta moderna, urbana, con tonos oscuros y detalles en naranja." },
+      "pizzeria": { "label": "Pizzería", "prompt": "Tengo una pizzería italiana llamada Bella Napoli en Lisboa. Vendemos pizzas artesanales, pastas, postres italianos y bebidas. Quiero una carta elegante en negro y dorado, con estilo sofisticado." },
+      "restaurant": { "label": "Restaurante", "prompt": "Tengo un restaurante mediterráneo en Cascais con cocina portuguesa contemporánea. Servimos entrantes, pescados, carnes, postres y una selección de vinos. Quiero una carta elegante y minimalista." },
+      "pastry": { "label": "Pastelería", "prompt": "Tengo una pastelería artesanal en Braga, especializada en tartas, dulces conventuales y café de especialidad. Quiero una carta delicada, con tipografía clásica y colores pastel y dorado." },
+      "bakery": { "label": "Panadería", "prompt": "Tengo una panadería de barrio en Coimbra con pan fresco, bocadillos, croissants, zumos naturales y cafés. Quiero una carta acogedora, artesanal y fácil de leer." },
+      "cafe": { "label": "Cafetería", "prompt": "Tengo una cafetería de especialidad en el centro de Oporto con métodos filtrados, espressos, bollería vegana y brunch. Quiero una carta limpia, moderna y minimalista." },
+      "sushi": { "label": "Sushi", "prompt": "Tengo un restaurante de sushi en Lisboa con combinados, uramaki, temaki, gunkan, sashimi y platos calientes. Quiero una carta contemporánea, oscura, con detalles en rojo." },
+      "acai": { "label": "Açaí", "prompt": "Tengo una tienda de açaí en Almada con bowls personalizables, smoothies, complementos saludables y zumos naturales. Quiero una carta joven, vibrante y llena de color." },
+      "gelato": { "label": "Heladería", "prompt": "Tengo una heladería artesanal italiana en Aveiro con helados, sorbetes, gofres, crepes y batidos. Quiero una carta divertida, con colores pastel e ilustraciones delicadas." },
+      "foodtruck": { "label": "Food Truck", "prompt": "Tengo un food truck en festivales con tacos mexicanos, quesadillas, nachos y refrescos artesanales. Quiero una carta informal, urbana y vibrante." }
+    },
+    "progress": {
+      "title": "KYVERON está creando tu carta",
+      "subtitle": "Este proceso solo tarda unos segundos.",
+      "steps": {
+        "analyzing": "Analizando el prompt",
+        "identifying": "Identificando el segmento",
+        "categories": "Creando categorías",
+        "products": "Creando productos",
+        "prices": "Definiendo precios",
+        "identity": "Creando identidad visual",
+        "layout": "Organizando el diseño",
+        "finalizing": "Finalizando"
+      }
+    }
   },
   "establishments": {
     "subtitle": "Gestione todos sus establecimientos en un solo lugar.",
