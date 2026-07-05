@@ -42,7 +42,8 @@
     "analytics": "Analytics",
     "settings": "Settings",
     "billing": "Billing",
-    "profile": "My Profile"
+    "profile": "My Profile",
+    "createWithAI": "Create with AI"
   },
   "landing": {
     "badge": "New · Automatic AI generation",

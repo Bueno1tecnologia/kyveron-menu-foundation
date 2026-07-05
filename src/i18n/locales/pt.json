@@ -42,7 +42,8 @@
     "analytics": "Análises",
     "settings": "Configurações",
     "billing": "Faturação",
-    "profile": "Meu Perfil"
+    "profile": "Meu Perfil",
+    "createWithAI": "Criar com IA"
   },
   "landing": {
     "badge": "Novo · Geração automática com IA",
