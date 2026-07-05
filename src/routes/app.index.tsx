@@ -99,7 +99,7 @@ function DashboardHome() {
   const hasMenus = recentMenus.length > 0;
 
   return (
-    <div className="mx-auto flex max-w-7xl flex-col gap-8">
+    <div className="mx-auto flex max-w-7xl flex-col gap-8 animate-fade-in">
       {/* Welcome hero + primary CTA */}
       <section className="relative overflow-hidden rounded-3xl border border-border/60 bg-gradient-soft p-6 shadow-sm sm:p-8">
         <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-gradient-brand opacity-20 blur-3xl" />
