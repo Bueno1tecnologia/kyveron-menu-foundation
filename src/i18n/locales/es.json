@@ -183,6 +183,23 @@
     "lastEdited": "Editada {{when}}",
     "noNotifications": "Sin notificaciones nuevas."
   },
+  "templates": {
+    "title": "Biblioteca de Plantillas",
+    "subtitle": "Elige una plantilla de inspiración para empezar.",
+    "useTemplate": "Usar esta plantilla",
+    "descriptions": {
+      "burger": "Estilo urbano y moderno con tonos oscuros y detalles en naranja.",
+      "pizzeria": "Estilo italiano clásico con rojo tomate y dorado.",
+      "restaurant": "Elegancia minimalista con tonos verde musgo y crema.",
+      "pastry": "Delicadeza artesanal con colores pastel y dorado suave.",
+      "bakery": "Acogedor estilo artesanal con tonos caramelo y marrón.",
+      "cafe": "Diseño limpio y moderno con marrón café y crema.",
+      "sushi": "Estética japonesa contemporánea con negro y rojo.",
+      "acai": "Look vibrante y joven con morado açaí y amarillo.",
+      "gelato": "Estilo divertido y fresco con colores pastel suaves.",
+      "foodtruck": "Actitud urbana y vibrante con amarillo y magenta."
+    }
+  },
   "create": {
     "title": "Crea una carta profesional con Inteligencia Artificial.",
     "subtitle": "Describe tu negocio con el mayor detalle posible y KYVERON crea automáticamente una carta moderna y totalmente editable.",
