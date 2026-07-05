@@ -183,6 +183,16 @@
     "lastEdited": "Edited {{when}}",
     "noNotifications": "No new notifications."
   },
+  "qrCode": {
+    "title": "Menu QR Code",
+    "pageTitle": "QR Code",
+    "pageSubtitle": "Share your menu with customers.",
+    "autoUpdate": "Automatically updated when the menu changes.",
+    "copyLink": "Copy link",
+    "download": "Download QR Code",
+    "share": "Share QR Code",
+    "shareSubject": "Digital menu from {{name}}"
+  },
   "templates": {
     "title": "Template Library",
     "subtitle": "Choose an inspiration template to get started.",
