@@ -30,7 +30,7 @@ function QrCodePage() {
   const publicUrl = `https://kyveron.menu/e/${establishment.id}`;
 
   return (
-    <div className="mx-auto max-w-xl">
+    <div className="mx-auto max-w-xl animate-fade-in">
       <header className="flex items-center gap-3">
         <Button variant="ghost" size="icon" asChild className="shrink-0">
           <Link to="/app/establishments">
