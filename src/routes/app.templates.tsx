@@ -82,7 +82,7 @@ function TemplatesPage() {
   const { t } = useTranslation();
 
   return (
-    <div className="mx-auto flex w-full max-w-6xl flex-col gap-8">
+    <div className="mx-auto flex w-full max-w-6xl flex-col gap-8 animate-fade-in">
       {/* Header */}
       <header className="text-center">
         <div className="mx-auto mb-4 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
