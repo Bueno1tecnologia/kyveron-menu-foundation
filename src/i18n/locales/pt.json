@@ -183,6 +183,23 @@
     "lastEdited": "Editado {{when}}",
     "noNotifications": "Sem notificações novas."
   },
+  "templates": {
+    "title": "Biblioteca de Templates",
+    "subtitle": "Escolha um template de inspiração para começar.",
+    "useTemplate": "Usar este template",
+    "descriptions": {
+      "burger": "Estilo urbano e moderno com tons escuros e detalhes em laranja.",
+      "pizzeria": "Estilo italiano clássico com vermelho tomate e dourado.",
+      "restaurant": "Elegância minimalista com tons verde musgo e creme.",
+      "pastry": "Delicadeza artesanal com cores pastel e dourado suave.",
+      "bakery": "Aconchego artesanal com tons caramelo e marrom.",
+      "cafe": "Design limpo e moderno com marrom café e creme.",
+      "sushi": "Estética contemporânea japonesa com preto e vermelho.",
+      "acai": "Visual vibrante e jovem com roxo açaí e amarelo.",
+      "gelato": "Estilo divertido e fresco com cores pastel suaves.",
+      "foodtruck": "Atitude urbana e vibrante com amarelo e magenta."
+    }
+  },
   "create": {
     "title": "Crie um cardápio profissional com Inteligência Artificial.",
     "subtitle": "Descreva o seu negócio com o máximo de detalhes possível e a KYVERON cria automaticamente um cardápio moderno e totalmente editável.",
