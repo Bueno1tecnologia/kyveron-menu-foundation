@@ -22,6 +22,7 @@ import { Route as AppTemplatesRouteImport } from './routes/app.templates'
 import { Route as AppSupportRouteImport } from './routes/app.support'
 import { Route as AppSubscriptionRouteImport } from './routes/app.subscription'
 import { Route as AppSettingsRouteImport } from './routes/app.settings'
+import { Route as AppQrRouteImport } from './routes/app.qr'
 import { Route as AppProfileRouteImport } from './routes/app.profile'
 import { Route as AppMenusRouteImport } from './routes/app.menus'
 import { Route as AppEstablishmentsRouteImport } from './routes/app.establishments'
@@ -94,6 +95,11 @@ const AppSettingsRoute = AppSettingsRouteImport.update({
   path: '/settings',
   getParentRoute: () => AppRoute,
 } as any)
+const AppQrRoute = AppQrRouteImport.update({
+  id: '/qr',
+  path: '/qr',
+  getParentRoute: () => AppRoute,
+} as any)
 const AppProfileRoute = AppProfileRouteImport.update({
   id: '/profile',
   path: '/profile',
@@ -140,6 +146,7 @@ export interface FileRoutesByFullPath {
   '/app/establishments': typeof AppEstablishmentsRoute
   '/app/menus': typeof AppMenusRoute
   '/app/profile': typeof AppProfileRoute
+  '/app/qr': typeof AppQrRoute
   '/app/settings': typeof AppSettingsRoute
   '/app/subscription': typeof AppSubscriptionRoute
   '/app/support': typeof AppSupportRoute
@@ -160,6 +167,7 @@ export interface FileRoutesByTo {
   '/app/establishments': typeof AppEstablishmentsRoute
   '/app/menus': typeof AppMenusRoute
   '/app/profile': typeof AppProfileRoute
+  '/app/qr': typeof AppQrRoute
   '/app/settings': typeof AppSettingsRoute
   '/app/subscription': typeof AppSubscriptionRoute
   '/app/support': typeof AppSupportRoute
@@ -182,6 +190,7 @@ export interface FileRoutesById {
   '/app/establishments': typeof AppEstablishmentsRoute
   '/app/menus': typeof AppMenusRoute
   '/app/profile': typeof AppProfileRoute
+  '/app/qr': typeof AppQrRoute
   '/app/settings': typeof AppSettingsRoute
   '/app/subscription': typeof AppSubscriptionRoute
   '/app/support': typeof AppSupportRoute
@@ -205,6 +214,7 @@ export interface FileRouteTypes {
     | '/app/establishments'
     | '/app/menus'
     | '/app/profile'
+    | '/app/qr'
     | '/app/settings'
     | '/app/subscription'
     | '/app/support'
@@ -225,6 +235,7 @@ export interface FileRouteTypes {
     | '/app/establishments'
     | '/app/menus'
     | '/app/profile'
+    | '/app/qr'
     | '/app/settings'
     | '/app/subscription'
     | '/app/support'
@@ -246,6 +257,7 @@ export interface FileRouteTypes {
     | '/app/establishments'
     | '/app/menus'
     | '/app/profile'
+    | '/app/qr'
     | '/app/settings'
     | '/app/subscription'
     | '/app/support'
@@ -357,6 +369,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AppSettingsRouteImport
       parentRoute: typeof AppRoute
     }
+    '/app/qr': {
+      id: '/app/qr'
+      path: '/qr'
+      fullPath: '/app/qr'
+      preLoaderRoute: typeof AppQrRouteImport
+      parentRoute: typeof AppRoute
+    }
     '/app/profile': {
       id: '/app/profile'
       path: '/profile'
@@ -409,6 +428,7 @@ interface AppRouteChildren {
   AppEstablishmentsRoute: typeof AppEstablishmentsRoute
   AppMenusRoute: typeof AppMenusRoute
   AppProfileRoute: typeof AppProfileRoute
+  AppQrRoute: typeof AppQrRoute
   AppSettingsRoute: typeof AppSettingsRoute
   AppSubscriptionRoute: typeof AppSubscriptionRoute
   AppSupportRoute: typeof AppSupportRoute
@@ -423,6 +443,7 @@ const AppRouteChildren: AppRouteChildren = {
   AppEstablishmentsRoute: AppEstablishmentsRoute,
   AppMenusRoute: AppMenusRoute,
   AppProfileRoute: AppProfileRoute,
+  AppQrRoute: AppQrRoute,
   AppSettingsRoute: AppSettingsRoute,
   AppSubscriptionRoute: AppSubscriptionRoute,
   AppSupportRoute: AppSupportRoute,
