@@ -3,6 +3,7 @@ import {
   Building2,
   CreditCard,
   LayoutDashboard,
+  LayoutTemplate,
   LifeBuoy,
   Settings,
   Sparkles,
@@ -31,6 +32,7 @@ export function AppSidebar() {
   const items = [
     { title: t("nav.dashboard"), url: "/app", icon: LayoutDashboard },
     { title: t("nav.createWithAI"), url: "/app/create", icon: Sparkles, highlight: true },
+    { title: t("nav.templates"), url: "/app/templates", icon: LayoutTemplate },
     { title: t("nav.menus"), url: "/app/menus", icon: UtensilsCrossed },
     { title: t("nav.establishments"), url: "/app/establishments", icon: Building2 },
     { title: t("nav.subscription"), url: "/app/subscription", icon: CreditCard },
