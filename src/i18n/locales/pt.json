@@ -183,6 +183,16 @@
     "lastEdited": "Editado {{when}}",
     "noNotifications": "Sem notificações novas."
   },
+  "qrCode": {
+    "title": "QR Code do Cardápio",
+    "pageTitle": "QR Code",
+    "pageSubtitle": "Partilhe o seu cardápio com os clientes.",
+    "autoUpdate": "Atualizado automaticamente quando o cardápio é alterado.",
+    "copyLink": "Copiar link",
+    "download": "Transferir QR Code",
+    "share": "Partilhar QR Code",
+    "shareSubject": "Cardápio digital de {{name}}"
+  },
   "templates": {
     "title": "Biblioteca de Templates",
     "subtitle": "Escolha um template de inspiração para começar.",

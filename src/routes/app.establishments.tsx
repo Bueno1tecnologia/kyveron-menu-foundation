@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { Building2, Plus, Search } from "lucide-react";
 
@@ -43,6 +43,7 @@ type SortOrder = "recent" | "oldest";
 
 function EstablishmentsPage() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const { establishments, create, update, remove, duplicate } = useEstablishments();
 
   const [formOpen, setFormOpen] = useState(false);
@@ -229,8 +230,11 @@ function EstablishmentsPage() {
                   onEdit={openEdit}
                   onDelete={setToDelete}
                   onDuplicate={(est) => duplicate(est.id)}
-                  onQrCode={() => {
-                    /* wired to QR feature in later prompt */
+                  onQrCode={(est) => {
+                    navigate({
+                      to: "/app/qr",
+                      search: { establishment: est.id },
+                    });
                   }}
                 />
               ))}

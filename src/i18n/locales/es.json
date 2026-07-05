@@ -183,6 +183,16 @@
     "lastEdited": "Editada {{when}}",
     "noNotifications": "Sin notificaciones nuevas."
   },
+  "qrCode": {
+    "title": "Código QR de la Carta",
+    "pageTitle": "Código QR",
+    "pageSubtitle": "Comparte tu carta con los clientes.",
+    "autoUpdate": "Actualizado automáticamente cuando la carta cambia.",
+    "copyLink": "Copiar enlace",
+    "download": "Descargar Código QR",
+    "share": "Compartir Código QR",
+    "shareSubject": "Carta digital de {{name}}"
+  },
   "templates": {
     "title": "Biblioteca de Plantillas",
     "subtitle": "Elige una plantilla de inspiración para empezar.",
