@@ -3,6 +3,9 @@ import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { Building2, Plus, Search } from "lucide-react";
 
+import { CardGridSkeleton } from "@/components/app/LoadingSkeletons";
+import { useSimulatedLoading } from "@/hooks/use-simulated-loading";
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
