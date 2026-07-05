@@ -129,7 +129,11 @@ function EstablishmentsPage() {
         )}
       </header>
 
-      {isEmpty ? (
+      {loading ? (
+        <div className="mt-8">
+          <CardGridSkeleton count={6} />
+        </div>
+      ) : isEmpty ? (
         <EmptyState onCreate={openCreate} />
       ) : (
         <>
