@@ -43,7 +43,8 @@
     "settings": "Configurações",
     "billing": "Faturação",
     "profile": "Meu Perfil",
-    "createWithAI": "Criar com IA"
+    "createWithAI": "Criar com IA",
+    "templates": "Templates"
   },
   "landing": {
     "badge": "Novo · Geração automática com IA",
