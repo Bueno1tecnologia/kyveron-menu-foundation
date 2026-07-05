@@ -3,6 +3,9 @@ import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { Building2, Plus, Search } from "lucide-react";
 
+import { CardGridSkeleton } from "@/components/app/LoadingSkeletons";
+import { useSimulatedLoading } from "@/hooks/use-simulated-loading";
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -45,6 +48,7 @@ function EstablishmentsPage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { establishments, create, update, remove, duplicate } = useEstablishments();
+  const loading = useSimulatedLoading(400);
 
   const [formOpen, setFormOpen] = useState(false);
   const [editing, setEditing] = useState<Establishment | null>(null);
@@ -107,7 +111,7 @@ function EstablishmentsPage() {
   const isEmpty = establishments.length === 0;
 
   return (
-    <div className="mx-auto max-w-7xl">
+    <div className="mx-auto max-w-7xl animate-fade-in">
       <header className="grid grid-cols-[minmax(0,1fr)_auto] items-start gap-4 sm:flex sm:flex-wrap sm:items-center sm:justify-between">
         <div className="min-w-0">
           <h1 className="truncate text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
@@ -125,7 +129,11 @@ function EstablishmentsPage() {
         )}
       </header>
 
-      {isEmpty ? (
+      {loading ? (
+        <div className="mt-8">
+          <CardGridSkeleton count={6} />
+        </div>
+      ) : isEmpty ? (
         <EmptyState onCreate={openCreate} />
       ) : (
         <>
