@@ -89,7 +89,7 @@ function DashboardHome() {
     to: string;
     icon: LucideIcon;
   }> = [
-    { key: "createMenu", label: t("dashboard.actions.createMenu"), to: "/app/menus", icon: UtensilsCrossed },
+    { key: "createMenu", label: t("dashboard.actions.createMenu"), to: "/app/create", icon: UtensilsCrossed },
     { key: "newEstablishment", label: t("dashboard.actions.newEstablishment"), to: "/app/establishments", icon: Building2 },
     { key: "generateQR", label: t("dashboard.actions.generateQR"), to: "/app/menus", icon: QrCode },
     { key: "manageSubscription", label: t("dashboard.actions.manageSubscription"), to: "/app/subscription", icon: CreditCard },
@@ -129,7 +129,7 @@ function DashboardHome() {
               size="lg"
               className="group h-12 gap-2 rounded-xl bg-gradient-brand px-5 text-base font-semibold text-primary-foreground shadow-glow transition hover:opacity-95 hover:shadow-lg"
             >
-              <Link to="/app/menus">
+              <Link to="/app/create">
                 <Sparkles className="h-5 w-5 transition-transform group-hover:rotate-12" />
                 {t("dashboard.createWithAI")}
               </Link>
@@ -284,7 +284,7 @@ function EmptyMenus() {
         asChild
         className="mt-1 h-11 gap-2 rounded-xl bg-gradient-brand px-5 font-semibold text-primary-foreground shadow-glow hover:opacity-95"
       >
-        <Link to="/app/menus">
+        <Link to="/app/create">
           <Plus className="h-4 w-4" />
           {t("dashboard.empty.cta")}
         </Link>

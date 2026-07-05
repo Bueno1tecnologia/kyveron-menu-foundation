@@ -5,6 +5,7 @@ import {
   LayoutDashboard,
   LifeBuoy,
   Settings,
+  Sparkles,
   UserCircle,
   UtensilsCrossed,
 } from "lucide-react";
@@ -29,6 +30,7 @@ export function AppSidebar() {
 
   const items = [
     { title: t("nav.dashboard"), url: "/app", icon: LayoutDashboard },
+    { title: t("nav.createWithAI"), url: "/app/create", icon: Sparkles, highlight: true },
     { title: t("nav.menus"), url: "/app/menus", icon: UtensilsCrossed },
     { title: t("nav.establishments"), url: "/app/establishments", icon: Building2 },
     { title: t("nav.subscription"), url: "/app/subscription", icon: CreditCard },
@@ -51,7 +53,16 @@ export function AppSidebar() {
                   item.url === "/app" ? pathname === "/app" : pathname.startsWith(item.url);
                 return (
                   <SidebarMenuItem key={item.url}>
-                    <SidebarMenuButton asChild isActive={active} tooltip={item.title}>
+                    <SidebarMenuButton
+                      asChild
+                      isActive={active}
+                      tooltip={item.title}
+                      className={
+                        item.highlight
+                          ? "data-[active=false]:text-primary data-[active=false]:hover:bg-primary/10"
+                          : undefined
+                      }
+                    >
                       <Link to={item.url} className="flex items-center gap-3">
                         <item.icon className="h-4 w-4" />
                         <span>{item.title}</span>
