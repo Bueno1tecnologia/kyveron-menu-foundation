@@ -48,6 +48,7 @@ function EstablishmentsPage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { establishments, create, update, remove, duplicate } = useEstablishments();
+  const loading = useSimulatedLoading(400);
 
   const [formOpen, setFormOpen] = useState(false);
   const [editing, setEditing] = useState<Establishment | null>(null);
