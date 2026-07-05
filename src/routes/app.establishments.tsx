@@ -43,6 +43,7 @@ type SortOrder = "recent" | "oldest";
 
 function EstablishmentsPage() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const { establishments, create, update, remove, duplicate } = useEstablishments();
 
   const [formOpen, setFormOpen] = useState(false);
