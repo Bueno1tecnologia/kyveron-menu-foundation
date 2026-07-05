@@ -181,6 +181,43 @@
     "lastEdited": "Edited {{when}}",
     "noNotifications": "No new notifications."
   },
+  "create": {
+    "title": "Create a professional menu with Artificial Intelligence.",
+    "subtitle": "Describe your business in as much detail as possible and KYVERON automatically builds a modern, fully editable menu for you.",
+    "editorLabel": "Describe your business",
+    "placeholder": "Example:\n\nI have an Italian restaurant called Bella Napoli located in Lisbon.\nI want an elegant menu in black and gold.\nWe sell artisan pizzas, pasta, Italian desserts and drinks.\nThe style should feel sophisticated.",
+    "cta": "✨ Create Menu",
+    "hint": "The more detail, the better the menu the AI creates.",
+    "tooShort": "Please write at least {{min}} characters so the AI can build a quality menu.",
+    "examplesTitle": "Need inspiration?",
+    "examplesSubtitle": "Click an example to auto-fill the editor.",
+    "examples": {
+      "burger": { "label": "Burger Joint", "prompt": "I run an artisan burger joint called Smoke House in Porto. We serve gourmet burgers, rustic fries, craft beers and milkshakes. I want a modern, urban menu with dark tones and orange accents." },
+      "pizzeria": { "label": "Pizzeria", "prompt": "I run an Italian pizzeria called Bella Napoli in Lisbon. We serve artisan pizzas, pasta, Italian desserts and drinks. I want an elegant menu in black and gold with a sophisticated style." },
+      "restaurant": { "label": "Restaurant", "prompt": "I run a Mediterranean restaurant in Cascais with contemporary Portuguese cuisine. We serve starters, fish dishes, meat dishes, desserts and a wine selection. I want an elegant, minimalist menu." },
+      "pastry": { "label": "Pastry Shop", "prompt": "I run an artisan pastry shop in Braga specialising in cakes, traditional Portuguese sweets and specialty coffee. I want a delicate menu with classic typography and soft pastel and gold tones." },
+      "bakery": { "label": "Bakery", "prompt": "I run a neighbourhood bakery in Coimbra with fresh bread, sandwiches, croissants, fresh juices and coffee. I want a warm, artisan menu that is easy to read." },
+      "cafe": { "label": "Café", "prompt": "I run a specialty coffee shop in downtown Porto with filter methods, espresso, vegan pastries and brunch. I want a clean, modern and minimalist menu." },
+      "sushi": { "label": "Sushi", "prompt": "I run a sushi restaurant in Lisbon with combos, uramaki, temaki, gunkan, sashimi and hot dishes. I want a contemporary, dark menu with red accents." },
+      "acai": { "label": "Açaí Shop", "prompt": "I run an açaí shop in Almada with custom bowls, smoothies, healthy toppings and natural juices. I want a young, vibrant and colourful menu." },
+      "gelato": { "label": "Gelato Shop", "prompt": "I run an Italian artisan gelato shop in Aveiro with gelato, sorbets, waffles, crepes and milkshakes. I want a playful menu with pastel colours and delicate illustrations." },
+      "foodtruck": { "label": "Food Truck", "prompt": "I run a food truck at festivals with Mexican tacos, quesadillas, nachos and craft sodas. I want an informal, urban and vibrant menu." }
+    },
+    "progress": {
+      "title": "KYVERON is building your menu",
+      "subtitle": "This only takes a few seconds.",
+      "steps": {
+        "analyzing": "Analyzing the prompt",
+        "identifying": "Identifying the segment",
+        "categories": "Creating categories",
+        "products": "Creating products",
+        "prices": "Setting prices",
+        "identity": "Creating visual identity",
+        "layout": "Organizing the layout",
+        "finalizing": "Finalizing"
+      }
+    }
+  },
   "establishments": {
     "subtitle": "Manage all your locations in one place.",
     "createNew": "Create New Establishment",

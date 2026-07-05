@@ -181,6 +181,43 @@
     "lastEdited": "Editado {{when}}",
     "noNotifications": "Sem notificações novas."
   },
+  "create": {
+    "title": "Crie um cardápio profissional com Inteligência Artificial.",
+    "subtitle": "Descreva o seu negócio com o máximo de detalhes possível e a KYVERON cria automaticamente um cardápio moderno e totalmente editável.",
+    "editorLabel": "Descreva o seu negócio",
+    "placeholder": "Exemplo:\n\nTenho um restaurante italiano chamado Bella Napoli localizado em Lisboa.\nQuero um cardápio elegante nas cores preto e dourado.\nVendemos pizzas artesanais, massas, sobremesas italianas e bebidas.\nO estilo deve transmitir sofisticação.",
+    "cta": "✨ Criar Cardápio",
+    "hint": "Quanto mais detalhes, melhor o cardápio criado pela IA.",
+    "tooShort": "Descreva com pelo menos {{min}} caracteres para a IA gerar um cardápio de qualidade.",
+    "examplesTitle": "Precisa de inspiração?",
+    "examplesSubtitle": "Clique num exemplo para preencher automaticamente.",
+    "examples": {
+      "burger": { "label": "Hamburgueria", "prompt": "Tenho uma hamburgueria artesanal chamada Smoke House no Porto. Servimos hambúrgueres gourmet, batatas rústicas, cervejas artesanais e milkshakes. Quero um cardápio moderno, urbano, com tons escuros e detalhes em laranja." },
+      "pizzeria": { "label": "Pizzaria", "prompt": "Tenho uma pizzaria italiana chamada Bella Napoli em Lisboa. Vendemos pizzas artesanais, massas, sobremesas italianas e bebidas. Quero um cardápio elegante nas cores preto e dourado, com estilo sofisticado." },
+      "restaurant": { "label": "Restaurante", "prompt": "Tenho um restaurante mediterrânico em Cascais com cozinha portuguesa contemporânea. Servimos entradas, pratos de peixe, pratos de carne, sobremesas e uma seleção de vinhos. Quero um cardápio elegante e minimalista." },
+      "pastry": { "label": "Pastelaria", "prompt": "Tenho uma pastelaria artesanal em Braga, especializada em bolos, doces conventuais e cafés especiais. Quero um cardápio delicado, com tipografia clássica e cores suaves como pastel e dourado." },
+      "bakery": { "label": "Padaria", "prompt": "Tenho uma padaria de bairro em Coimbra com pão fresco, sandes, croissants, sumos naturais e cafés. Quero um cardápio acolhedor, artesanal e simples de ler." },
+      "cafe": { "label": "Café", "prompt": "Tenho um café de especialidade no centro do Porto com métodos filtrados, espressos, pastelaria vegana e brunch. Quero um cardápio limpo, moderno e minimalista." },
+      "sushi": { "label": "Sushi", "prompt": "Tenho um restaurante de sushi em Lisboa com combinados, uramaki, temaki, gunkan, sashimi e pratos quentes. Quero um cardápio contemporâneo, escuro, com detalhes em vermelho." },
+      "acai": { "label": "Açaí", "prompt": "Tenho uma loja de açaí em Almada com bowls personalizáveis, smoothies, complementos saudáveis e sumos naturais. Quero um cardápio jovem, vibrante e cheio de cor." },
+      "gelato": { "label": "Gelataria", "prompt": "Tenho uma gelataria artesanal italiana em Aveiro com gelados, sorbets, waffles, crepes e milkshakes. Quero um cardápio divertido, com cores pastel e ilustrações delicadas." },
+      "foodtruck": { "label": "Food Truck", "prompt": "Tenho um food truck em festivais com tacos mexicanos, quesadillas, nachos e refrescos artesanais. Quero um cardápio informal, urbano e vibrante." }
+    },
+    "progress": {
+      "title": "A KYVERON está a criar o seu cardápio",
+      "subtitle": "Este processo demora apenas alguns segundos.",
+      "steps": {
+        "analyzing": "A analisar o prompt",
+        "identifying": "A identificar o segmento",
+        "categories": "A criar categorias",
+        "products": "A criar produtos",
+        "prices": "A definir preços",
+        "identity": "A criar identidade visual",
+        "layout": "A organizar o layout",
+        "finalizing": "A finalizar"
+      }
+    }
+  },
   "establishments": {
     "subtitle": "Faça a gestão de todos os seus estabelecimentos num único lugar.",
     "createNew": "Criar Novo Estabelecimento",
