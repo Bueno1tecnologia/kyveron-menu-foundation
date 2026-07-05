@@ -183,6 +183,23 @@
     "lastEdited": "Edited {{when}}",
     "noNotifications": "No new notifications."
   },
+  "templates": {
+    "title": "Template Library",
+    "subtitle": "Choose an inspiration template to get started.",
+    "useTemplate": "Use this template",
+    "descriptions": {
+      "burger": "Urban and modern style with dark tones and orange accents.",
+      "pizzeria": "Classic Italian style with tomato red and gold.",
+      "restaurant": "Minimalist elegance with moss green and cream tones.",
+      "pastry": "Artisan delicacy with pastel colors and soft gold.",
+      "bakery": "Cozy artisan style with caramel and brown tones.",
+      "cafe": "Clean modern design with coffee brown and cream.",
+      "sushi": "Contemporary Japanese aesthetic with black and red.",
+      "acai": "Vibrant young look with açaí purple and yellow.",
+      "gelato": "Fun and fresh style with soft pastel colors.",
+      "foodtruck": "Urban vibrant attitude with yellow and magenta."
+    }
+  },
   "create": {
     "title": "Create a professional menu with Artificial Intelligence.",
     "subtitle": "Describe your business in as much detail as possible and KYVERON automatically builds a modern, fully editable menu for you.",
