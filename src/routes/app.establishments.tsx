@@ -229,8 +229,11 @@ function EstablishmentsPage() {
                   onEdit={openEdit}
                   onDelete={setToDelete}
                   onDuplicate={(est) => duplicate(est.id)}
-                  onQrCode={() => {
-                    /* wired to QR feature in later prompt */
+                  onQrCode={(est) => {
+                    navigate({
+                      to: "/app/qr",
+                      search: { establishment: est.id },
+                    });
                   }}
                 />
               ))}
